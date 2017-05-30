@@ -19,7 +19,7 @@ Class Customer extends CActiveRecord
 		return [
 			[['name', 'email'], required],
 			['email', 'email']			
-		]
+		];
 	}
 
 	public function attributeLabels()
@@ -27,7 +27,7 @@ Class Customer extends CActiveRecord
 		return [
 			'name' => 'Nome',
 			'email' => 'E-mail'			
-		]
+		];
 	}
 
 	public static function model($className=__CLASS__)
