@@ -18,14 +18,14 @@ Class Contact extends CActiveRecord
 	{
 		return [
 			['phone', 'required']			
-		]
+		];
 	}
 
 	public function attributeLabels()
 	{
 		return [			
 			'phone' => 'Telefone'			
-		]
+		];
 	}
 
 	public static function model($className=__CLASS__)
