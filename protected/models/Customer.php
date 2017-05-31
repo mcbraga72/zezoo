@@ -17,7 +17,7 @@ Class Customer extends CActiveRecord
 	public function rules()
 	{
 		return [
-			[['name', 'email'], required],
+			[['name', 'email'], 'required'],
 			['email', 'email']			
 		];
 	}
@@ -25,7 +25,7 @@ Class Customer extends CActiveRecord
 	public function attributeLabels()
 	{
 		return [
-			'name' => 'Nome',
+			'name' => 'Name',
 			'email' => 'E-mail'			
 		];
 	}
